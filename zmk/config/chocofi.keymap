@@ -171,10 +171,10 @@
         num_layer {
             display-name = "num";
             bindings = <
-&none   &none    &none    &kp TAB      &kp LS(TAB) &none        &none   &kp N7   &kp N8   &kp N9       &kp COMMA &none
-&none   &none    &kp PLUS &kp MINUS    &kp EQUAL   &kp LA(B)    &none   &kp N4   &kp N5   &kp N6       &kp SPACE &none
-&none   &none    &none    &none        &kp N0      &kp LA(V)    &none   &kp N1   &kp N2   &kp N3       &kp DOT   &none
-                           &to MAC_BASE &trans      &trans       &trans  &trans   &to MAC_BASE
+&none   &bt BT_NXT &none    &kp TAB      &kp LS(TAB) &none        &none   &kp N7   &kp N8   &kp N9       &kp COMMA &none
+&none   &none    &kp PLUS &kp MINUS    &kp EQUAL   &none        &none   &kp N4   &kp N5   &kp N6       &kp SPACE &none
+&none   &bt BT_PRV &none    &none        &kp N0      &none        &none   &kp N1   &kp N2   &kp N3       &kp DOT   &none
+                           &to MAC_BASE &trans      &trans       &trans  &none    &bt BT_CLR
             >;
         };
 
@@ -215,10 +215,10 @@
         mac_num_layer {
             display-name = "mac-num";
             bindings = <
-&none   &none    &none    &kp TAB   &kp LS(TAB) &none        &none   &kp N7   &kp N8   &kp N9   &kp COMMA &none
-&none   &none    &kp PLUS &kp MINUS &kp EQUAL   &kp LA(B)    &none   &kp N4   &kp N5   &kp N6   &kp SPACE &none
-&none   &none    &none    &none     &kp N0      &kp LA(V)    &none   &kp N1   &kp N2   &kp N3   &kp DOT   &none
-                           &to BASE  &trans      &trans       &trans  &trans   &to BASE
+&none   &bt BT_NXT &none    &kp TAB   &kp LS(TAB) &none        &none   &kp N7   &kp N8   &kp N9   &kp COMMA &none
+&none   &none    &kp PLUS &kp MINUS &kp EQUAL   &none        &none   &kp N4   &kp N5   &kp N6   &kp SPACE &none
+&none   &bt BT_PRV &none    &none     &kp N0      &none        &none   &kp N1   &kp N2   &kp N3   &kp DOT   &none
+                           &to BASE  &trans      &trans       &trans  &none    &bt BT_CLR
             >;
         };
     };
